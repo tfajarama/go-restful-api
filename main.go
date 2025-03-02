@@ -23,6 +23,12 @@ func main() {
 	// Run Auto Migration (Opsional, bisa dihapus jika tidak diperlukan)
 	err := db.AutoMigrate(&domain.Category{})
 	helper.PanicIfError(err)
+	err = db.AutoMigrate(&domain.Product{})
+	helper.PanicIfError(err)
+	err = db.AutoMigrate(&domain.Customer{})
+	helper.PanicIfError(err)
+	err = db.AutoMigrate(&domain.Employee{})
+	helper.PanicIfError(err)
 
 	// Initialize Validator
 	validate := validator.New()

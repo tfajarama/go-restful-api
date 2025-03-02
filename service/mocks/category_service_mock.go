@@ -15,7 +15,6 @@ import (
 	reflect "reflect"
 
 	web "github.com/aronipurwanto/go-restful-api/model/web"
-
 )
 
 // MockCategoryService is a mock of CategoryService interface.

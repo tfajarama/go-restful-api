@@ -1,7 +1,7 @@
 package domain
 
 type Employee struct {
-	EmployeeID uint64 `gorm:"column:id;primary_key"`
+	EmployeeID uint64 `gorm:"column:id;primary_key;autoIncrement"`
 	Name       string `gorm:"column:name"`
 	Role       string `gorm:"column:role"` // e.g., Cashier, Manager
 	Email      string `gorm:"column:email"`

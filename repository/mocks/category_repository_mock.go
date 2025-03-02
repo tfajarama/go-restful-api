@@ -15,7 +15,6 @@ import (
 	reflect "reflect"
 
 	domain "github.com/aronipurwanto/go-restful-api/model/domain"
-
 )
 
 // MockCategoryRepository is a mock of CategoryRepository interface.
